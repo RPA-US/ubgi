@@ -1,0 +1,88 @@
+{% extends 'layouts/base.html' %}
+{% load extras %}
+{% load i18n %}
+
+{% block title %} {% blocktranslate %}Case studies{% endblocktranslate %} {% endblock title %}
+
+{% block content %}
+
+  <div class="header bg-primary pb-6">
+    <div class="container-fluid">
+      <div class="header-body">
+        <div class="row align-items-center py-4">
+          <div class="col-12" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="/case-study/list/" class="btn btn-neutral"><i class="fas fa-arrow-left" style="margin-right: 5px;">
+            </i>{% blocktranslate %}Go Back to Case Studies{% endblocktranslate %}</a>
+            <h6 class="h2 text-white d-inline-block mb-0">{% blocktranslate %}Case Study {{ case_study_id }} details{% endblocktranslate %}</h6>
+            <nav aria-label="breadcrumb" class="d-none d-md-inline-block mt-md-3 ml-md-2">
+              <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                <li class="breadcrumb-item"><a href="/case-study/list/"><i class="fas fa-home"></i></a></li>
+                <li class="breadcrumb-item active" aria-current="page">{% blocktranslate %}Case study {{ case_study_id }}{% endblocktranslate %}</a></li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Page content -->
+  <div class="container-fluid mt--6">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <!-- Card header -->
+          <div class="card-header border-0">
+            <h3 class="mb-0">{% blocktranslate %}Case study {{ case_study_id }} details{% endblocktranslate %}</h3>
+          </div>
+          <div class="card-body">
+            {% include "case_studies/form.html" %}
+            <hr class="my-4" />
+            <!-- Phases to execute -->
+            <h6 class="heading-small text-muted mb-4">{% blocktranslate %}Set Up Phases{% endblocktranslate %}</h6>
+            <div class="pl-lg-4">
+              <div class="card-body">
+                <div class="row icon-examples">
+                  <div class="col-lg-3 col-md-6">
+                    {% if 'Monitoring' in case_study.available_phases %}
+                    <a href="/monitoring/list/{{ case_study_id }}" type="button" class="btn-icon-clipboard">
+                    {% else %}
+                    <a type="button" class="btn-icon-clipboard btn-icon-clipboard-disabled" disabled>
+                    {% endif %}
+                      <div>
+                        <i class="ni ni-laptop"></i> <span>{% blocktranslate %}UB Log Gaze Enricher{% endblocktranslate %}</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    {% if 'Prefilters' in case_study.available_phases %}
+                    <a href="/fe/prefiltering/list/{{ case_study_id }}" type="button" class="btn-icon-clipboard">
+                    {% else %}
+                    <a type="button" class="btn-icon-clipboard btn-icon-clipboard-disabled" disabled>
+                    {% endif %}
+                      <div>
+                        <i class="ni ni-zoom-split-in"></i> <span>{% blocktranslate %}Filtering Mask{% endblocktranslate %}</span>
+                      </div>
+                    </a>
+                    {% if not 'Prefilters' in case_study.available_phases %}
+                      <p class="text-sm text-muted">
+                        {% blocktranslate %}UB Log Gaze Enricher needed{% endblocktranslate %}
+                      </p>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include "includes/footer.html" %}
+
+  </div>
+
+{% endblock content %}
+
+<!-- Specific JS goes HERE --> 
+{% block javascripts %}{% endblock javascripts %}
