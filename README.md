@@ -2,10 +2,10 @@
 
 ## A Tool for Incorporating Eye Tracking Data in RPA: Enhancing User Behavior Logs
 
-Manuel García-Romero (orcid=0000-0003-2113-3497) (mgarcia44@us.es)
-Antonio Martínez-Rojas (orcid=0000-0002-2782-9893) (amrojas@us.es)
-A. Jiménez-Ramírez (orcid=0000-0001-8657-992X) (ajramirez@us.es)
-J. G. Enríquez (orcid=0000-0002-2631-5890) (jgenriquez@us.es)
+ - Manuel García-Romero (orcid=0000-0003-2113-3497) (mgarcia44@us.es)
+ - Antonio Martínez-Rojas (orcid=0000-0002-2782-9893) (amrojas@us.es)
+ - A. Jiménez-Ramírez (orcid=0000-0001-8657-992X) (ajramirez@us.es)
+ - J. G. Enríquez (orcid=0000-0002-2631-5890) (jgenriquez@us.es)
 
 University of Seville. Computer Languages and Systems Department. E.T.S. Ingeniería Informática. Avenida Reina Mercedes, s/n, 41012, Seville, Spain}
 
@@ -15,17 +15,12 @@ Proceedings of the Demonstration \& Resources Track, Best BPM Dissertation Award
 
 ## Demo
 
-The demo video is at 
+- The demo video is at 
 
-The case study is located in the ugbi project root (bpm_24_case_study.zip)
+- The case study is located in the ugbi project root (bpm_24_case_study.zip)
 
 > Note: To use the app, please access the registration page and create a new user. After authentication, the app will unlock the private pages.
 Create a new user on the **registration page** or executing in the terminal "python manage.py createsuperuser".
-
-> Recommendation -> User:demo;Password:demoBPM2024
-
-
-
 
 <br />
 
@@ -37,16 +32,20 @@ $ git clone https://github.com/RPA-US/ubgi.git
 $ cd ubgi
 ```
 
-After getting the code, open a terminal and navigate to the working directory, with product source code.
-The following software is needed to run this platform if you want to install via local:
+After setting the project, open a terminal and navigate to the working directory, with product source code.
+The following software is neeeded to run UGBI if you want to install via local:
 - Python 3.10 or newer
 - Install PostgreSQL
 - C++ Dev Tools from Visual Studio: ![visual_studio_c++_features](apps\static\assets\img\image.png) 
 
-> You can install ugbi via docker if you do not want to install UGBI, Python and PostgreSQL locally. Remember to attach the container in VS code and install python for that container instance.
+You can install UGBI via docker
+
 ``` bash
 $ docker-compose -f docker-compose-dev.yml up
 ```
+
+> Note:Remember to attach the container in VS code and install python for that container instance.
+
 
 Independently if you have installed UBGI via local or via Docker:
 
@@ -85,8 +84,6 @@ $ # Access the web app in browser: http://127.0.0.1:8000/
 ```
 
 
-##
-
 ## Eye Tracking Use and Support
 
 To record a gaze log with the eye tracking software integrated into ScreenRPA (WebGazer.js <https://github.com/brownhci/WebGazer>), follow these steps:
@@ -111,3 +108,8 @@ To record a gaze log with the eye tracking software integrated into ScreenRPA (W
 By following these steps, you will effectively utilize the eye tracking capabilities of UGBI to capture comprehensive logs of your interactions.
 
 
+## Acknowledgments
+
+This research was supported by the EQUAVEL project PID2022-137646OB-C31, funded by MICIU/AEI/10.13039/501100011033 and by FEDER, UE;
+the DISCOVERY project (2021/C005/00148631), funded by Unión Europea NextGeneration EU and “Plan de Recuperación, Transformación y Resiliencia” of the Ministry of Economic and Digital Transformation;
+and the grant FPU20/05984 funded by MICIU/AEI/10.13039/501100011033 and by FSE+.
