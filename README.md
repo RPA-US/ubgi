@@ -43,12 +43,12 @@ The following software is needed to run this platform if you want to install via
 - Install PostgreSQL
 - C++ Dev Tools from Visual Studio: ![visual_studio_c++_features](apps\static\assets\img\image.png) 
 
-> You can install ugbi via docker if you do not want to install UGBI, Python and PostgreSQL locally. 
+> You can install ugbi via docker if you do not want to install UGBI, Python and PostgreSQL locally. Remember to attach the container in VS code and install python for that container instance.
 ``` bash
 $ docker-compose -f docker-compose-dev.yml up
 ```
-Remember to attach the container in VS code and install python for that container instance.
 
+Independently if you have installed UBGI via local or via Docker:
 
 ```bash
 $ # Virtualenv modules installation (Unix based systems)
