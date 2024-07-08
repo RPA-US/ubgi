@@ -15,12 +15,12 @@ Proceedings of the Demonstration \& Resources Track, Best BPM Dissertation Award
 
 ## Demo
 
-> The demo video is at 
+The demo video is at 
 
-> The case study is located in the ugbi project root (bpm_24_case_study.zip)
+The case study is located in the ugbi project root (bpm_24_case_study.zip)
 
 > Note: To use the app, please access the registration page and create a new user. After authentication, the app will unlock the private pages.
-> Create a new user on the **registration page** or executing in the terminal "python manage.py createsuperuser".
+Create a new user on the **registration page** or executing in the terminal "python manage.py createsuperuser".
 
 > Recommendation -> User:demo;Password:demoBPM2024
 
@@ -37,13 +37,13 @@ $ git clone https://github.com/RPA-US/ubgi.git
 $ cd ubgi
 ```
 
-> After getting the code, open a terminal and navigate to the working directory, with product source code.
-> The following software is needed to run this platform if you want to install via local:
+After getting the code, open a terminal and navigate to the working directory, with product source code.
+The following software is needed to run this platform if you want to install via local:
 - Python 3.10 or newer
 - Install PostgreSQL
 - C++ Dev Tools from Visual Studio: ![visual_studio_c++_features](apps\static\assets\img\image.png) 
 
-> You can install ugbi via docker if you do not want to install ugbi,python and PostgreSQL locally. 
+> You can install ugbi via docker if you do not want to install UGBI, Python and PostgreSQL locally. 
 ``` bash
 $ docker-compose -f docker-compose-dev.yml up
 ```
