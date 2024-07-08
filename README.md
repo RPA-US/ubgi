@@ -15,11 +15,16 @@ Proceedings of the Demonstration \& Resources Track, Best BPM Dissertation Award
 
 ## Demo
 
+> The demo video is at 
+
+> The case study is located in the ugbi project root (bpm_24_case_study.zip)
+
+> Note: To use the app, please access the registration page and create a new user. After authentication, the app will unlock the private pages.
 > Create a new user on the **registration page** or executing in the terminal "python manage.py createsuperuser".
 
 > Recommendation -> User:demo;Password:demoBPM2024
 
-> The demo video is at 
+
 
 
 <br />
@@ -79,7 +84,8 @@ $
 $ # Access the web app in browser: http://127.0.0.1:8000/
 ```
 
-> Note: To use the app, please access the registration page and create a new user. After authentication, the app will unlock the private pages.
+
+##
 
 ## Eye Tracking Use and Support
 
