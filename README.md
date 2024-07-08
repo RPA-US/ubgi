@@ -1,4 +1,4 @@
-# [UBGI (User Behaviour Gaze Integrator]
+# User Behaviour Gaze Integrator (UBGI)
 
 ## A Tool for Incorporating Eye Tracking Data in RPA: Enhancing User Behavior Logs
 
