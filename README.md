@@ -15,7 +15,7 @@ Proceedings of the Demonstration \& Resources Track, Best BPM Dissertation Award
 
 ## Demo
 
-- The demo video is at 
+- To watch the video demo, click [here](https://www.youtube.com/watch?v=hW4-oQRNBC8)
 
 - The case study is located in the ugbi project root (bpm_24_case_study.zip)
 
