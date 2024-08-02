@@ -49,7 +49,7 @@ $ docker-compose -f docker/docker-compose-nvidia.yml up
 > Note:Remember to attach the container "docker-screen-rpa" in VS code and install python for that container instance.
 
 
-Independently if you have installed UBGI via local or via Docker and the virtualenv is not activated:
+Independently if you have installed UBGI via local or via Docker and the virtualenv is not activated, open the bash terminal and enter:
 
 ```bash
 $ # Virtualenv modules installation (Unix based systems)
