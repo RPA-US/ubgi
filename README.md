@@ -38,16 +38,18 @@ The following software is neeeded to run UGBI if you want to install via local:
 - Install PostgreSQL
 - C++ Dev Tools from Visual Studio: ![visual_studio_c++_features](apps\static\assets\img\image.png) 
 
-You can install UGBI via docker
+You can install UGBI via docker (easier way):
+
+> Copy the content from ".env.sample" and paste it in a new ".env" in the "docker" folder
 
 ``` bash
-$ docker-compose -f docker-compose-dev.yml up
+$ docker-compose -f docker/docker-compose-nvidia.yml up
 ```
 
-> Note:Remember to attach the container in VS code and install python for that container instance.
+> Note:Remember to attach the container "docker-screen-rpa" in VS code and install python for that container instance.
 
 
-Independently if you have installed UBGI via local or via Docker:
+Independently if you have installed UBGI via local or via Docker and the virtualenv is not activated:
 
 ```bash
 $ # Virtualenv modules installation (Unix based systems)
@@ -63,8 +65,6 @@ $ pip install -r requirements.txt
 $
 $ 
 ```
-
-> Copy the content from ".env.sample" and paste it in a new ".env" . This ".env" must be placed in ubgi/core. Change the values if you need it
 
 ```bash
 
