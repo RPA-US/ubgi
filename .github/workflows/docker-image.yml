@@ -45,3 +45,4 @@ jobs:
           context: .
           push: true
           file: docker/nvidia.Dockerfile
+          tags: latest,nvidia
