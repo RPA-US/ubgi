@@ -45,4 +45,4 @@ jobs:
           context: .
           push: true
           file: docker/nvidia.Dockerfile
-          tags: latest-nvidia
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest-nvidia
