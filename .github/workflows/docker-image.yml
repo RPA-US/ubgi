@@ -27,4 +27,4 @@ jobs:
           context: .
           push: true
           file: docker/nvidia.Dockerfile
-          tags: ghcr.io/RPA-US/ubgi:latest
+          tags: ghcr.io/rpa-us/ubgi:latest
